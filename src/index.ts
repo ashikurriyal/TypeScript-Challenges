@@ -86,4 +86,12 @@ function getDayType(day: Day): string {
   return day === Day.Saturday || day === Day.Sunday ? "Weekend" : "Weekday";
 }
 
-
+async function squareAsync(n: number): Promise<number> {
+  return new Promise((resolve, reject) => {
+    if (n < 0) {
+      reject("Negative number is not allowed");
+    } else {
+      setTimeout(() => resolve(n * n), 1000);
+    }
+  });
+}
