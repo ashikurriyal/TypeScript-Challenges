@@ -44,7 +44,7 @@ Here, `Developer` can be either a `FrontendDeveloper` or `BackendDeveloper`.
 Intersection types combine multiple types into one. The resulting type must satisfy all the combined types.
 
 ```ts
-    type Frontend = {
+type Frontend = {
   skills: string[];
   designation1: 'Frontend Developer';
 };
